@@ -1,6 +1,14 @@
-# Sources and evidence-to-rule mapping
+# Sources: General / Photo / Poster
 
-Version 0.1.0. Prepared 29 October 2026 from the supplied PDF versions. Relevant methods, findings, taxonomy and lighting sections were read; this is not a claim of exhaustive line-by-line review. Only original summaries and source links are distributed. No source PDF or illustration is bundled.
+Version 0.2.0. Prepared 31 October 2026. S1-S4 retain the earlier selected-source review. S5-S7 were inspected directly from the newly supplied PDFs: selected text and visual pages, not exhaustive reading. Original operational summaries only. See [SOURCE-MAP](references/SOURCE-MAP.md) for page-by-page applications and limits.
+
+## General - S5
+
+David Dabner, Sandra Stewart, Abbie Vickress. *Graphic Design School: The Principles and Practice of Graphic Design*, seventh edition, 2020. ISBN 9781119647119.
+
+Inspected selected sections: audiences/message (printed pp.20, 24); composition, space, layouts, pace (pp.32-33, 36-37, 40-41, 44-47); emphasis (78-79); color legibility and information (92-93, 96-97). In this supplied PDF, printed +2 gives one-based PDF page. Applied to GENERAL.md, with poster-specific adaptations. Software, web implementation, and career chapters are outside the current scope.
+
+## Photo - S1-S4
 
 ## S1 - Naturalness framework
 
@@ -36,12 +44,28 @@ https://www.routledge.com/p/book/9780367860271
 
 Locations use printed pages; supplied PDF pages are generally printed page +17: ch. 2 (particularly pp. 18-22), ch. 3 (pp. 31-40), ch. 6 (metal), ch. 7 (glass), ch. 8 (portraits; p. 177 skin texture). Selected material/portrait sections and contents were consulted.
 
-Applied here: apparent source size informs shadow softness; reflection geometry controls highlight appearance; metal and glass require different treatment; skin texture interacts with light. Applying these principles to generative prompts is our recommendation, not a claim that the book studied AI generation.
+Applied here: apparent source size informs shadow softness; reflection geometry controls highlight appearance; metal and glass require different treatment; skin texture interacts with light. Applying these principles to tool execution is our recommendation, not a claim that the book studied AI generation.
 
-## What is authored rather than empirically validated here
+## Poster typography - S6
 
-Identity and asset locks come from the user's requirements. Poster hierarchy, typography, export checks, prompt format, severity ordering and revision limits are editorial workflow choices. None of the four sources supplies a universal humanizer prompt, fixed sliders, detector-evasion recipe, or quantified guarantee. The package has not yet been validated with real image-generation trials.
+Ellen Lupton. *Thinking with Type: A Critical Guide for Designers, Writers, Editors, and Students*, third revised and expanded edition, 2024. Princeton Architectural Press. ISBN 9781797226828.
 
-## Redistribution
+https://ellenlupton.com/Thinking-with-Type
 
-Source copyright and licenses remain with the respective owners. This repository includes neither the books nor paper PDFs, copied figures or substantial excerpts. UI UX Pro Max is an optional external skill, not bundled. Any license added to this repository covers only its original authored content, not cited works or future user assets.
+Selected printed locations: pp.58-59 (type selection); 116, 124, 128, 132-134, 138, 148 (alignment, spacing, readability); 156-158, 160-161, 164 (hierarchy/scale); 222-223, 226, 236-237, 244 (grouping, alignment, grid, serial design). Supplied PDF offset +2. Applied to TYPOGRAPHY.md and poster layout. Detailed map distinguishes inspected pages from adjacent chapter coverage.
+
+## Poster exploration - S7
+
+Neville Brody and Jon Wozencroft. *FUSE 1-20: From Invention to Antimatter: Twenty Years of FUSE*. TASCHEN, 2012. ISBN 9783836525015. A multi-contributor collection, not a single style manual.
+
+Image-based supplied scan, 423 PDF pages. Selected overview pages and individual works were visually inspected; essays were not exhaustively read/OCRed. FUSE.md adapts observed devices from the FUSE 1 overview (PDF 28), Phil Baines (31), Malcolm Garrett (36), Max Kisman (50), and Barry Deck (86). SOURCE-MAP records verified printed/PDF locations and sampling coverage. Applications are our adaptations, not universal rules attributed to the book.
+
+## What is authored rather than empirically validated
+
+Question budget, execute-first delivery, transcript summarization, fidelity defaults, instruction priority, severity, and repair limits are workflow choices. Research and design books inform inspection and composition; none proves a universal recipe or exact tool fidelity. S1-S3 concern particular model generations and datasets; S5-S7 are design references, not controlled evaluations of this skill.
+
+Real generation/editing trials remain pending. No score of realism, readiness percentage, detector-evasion result, or universal pass/fail color threshold is claimed. General standards allow multiple styles. FUSE remains optional.
+
+## Distribution
+
+No supplied PDFs, book-page screenshots, large excerpts, source illustrations, faces, or machine-specific paths are bundled in the repository. Source copyrights remain with their owners. Private visual-study previews are kept separately from the distributable. Optional design skills are not bundled.

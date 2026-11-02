@@ -1,43 +1,47 @@
-# Parameter map
+# Brief and diagnostic map
 
-This is an author-designed editing framework, informed by the sources. It is not a validated metric, model setting sheet, or AI detector. Parameter values are descriptive decisions, not arbitrary 1-10 sliders. Read it when establishing the brief and when diagnosing an image.
+A working framework, not a validated metric, detector, or sheet of numeric settings. Use only applicable fields internally; do not turn this into a user questionnaire.
 
-## Working brief
+## Brief
 
-Capture only applicable fields; do not show a long form to the user.
+| Field | Decision |
+|---|---|
+| Route | Informative poster / event poster / product retouch / generated-image repair / composite |
+| Source meaning | Main idea, supporting facts, qualifications, units, actionable steps |
+| Output | Audience, purpose, viewing context, requested dimensions or print requirements |
+| Direction | Desired tone/style; infer sensible choices where optional |
+| Fidelity | Exact facts/assets and intended changes; specific current requests update defaults |
+| Roles | Transcript/base/identity/product/logo/exact copy/style-only priorities |
+| Method | Available authorized tools, host instructions, actual output capability |
 
-| Field | Values / decision | How to resolve |
+Questions: follow SKILL.md's single batch, maximum five, only unresolved consequential decisions. The deliverable is the visual; internal outlines and tool instructions do not require an extra approval step.
+
+## Severity
+
+- **Critical:** changes source meaning, a required fact or protected asset; omits a required participant/section; makes essential information unreadable; or introduces a visible structural error that defeats the brief. Repair before calling final. Deliberately requested changes do not count as accidental fidelity failures.
+- **Major:** clearly degrades the intended result at viewing size without breaking a protected requirement, such as an extraction halo, mismatched photographic light, or confused secondary hierarchy.
+- **Minor:** close-inspection polish or a small optional distraction. Fix when useful; do not invent issues to fill a checklist.
+
+Severity follows the brief. A loose experimental display word is not automatically critical, and unreadable essential secondary text can be critical despite its small size.
+
+## Diagnose selectively
+
+Record region -> observation -> proposed repair -> preservation requirement -> severity -> confidence, using only visible material issues.
+
+| Area | Check | Action boundary |
 |---|---|---|
-| Route | Generated-image repair / real-photo retouch / composite-poster | User brief and input roles; ask if unclear |
-| Output | Platform, aspect ratio, pixel dimensions or print size | Ask if layout would change; do not invent print readiness |
-| Art direction | User-described style; style reference with explicit role | Inherit the initial prompt; no compulsory candid aesthetic |
-| Fidelity locks | Face, product, logo, exact text, specified surroundings | Default locks plus user-specific constraints |
-| Change envelope | Background, wardrobe, pose, crop, lighting, cleanup | Broad edits allowed only outside locks and within intent |
-| Input priority | Which reference governs identity, geometry, style, copy | Ask where references conflict |
-| Delivery | Prompt only / prompt and requested execution | Default prompt; tools determine execution availability |
-| Tool target | Named editor/generator or tool-neutral | Ask only when syntax/capability affects delivery |
+| Meaning | Summary, qualifiers, relationships, factual copy | Free wording, faithful content; no invented dates/statistics |
+| Hierarchy | Main idea, reading path, logistics, grouping | General + Typography; no fixed aesthetic |
+| Type | Actual glyphs, spacing, breaks, contrast | Exact facts verified manually; OCR is optional support |
+| Identity/product | Shape, character, marks, color, label vs reference | Preserve unless specifically changed in brief |
+| Anatomy/contact | Grip, support, occlusion, normal variation | Repair demonstrated defects; do not infer missing anatomy |
+| Geometry | Perspective, scale, support, reflection-object relation | Account for multiple planes and intentional graphic collage |
+| Lighting/material | Sources, shadow softness/direction, metal/glass behavior | Multiple sources valid; do not flatten intentional highlights |
+| Exposure/color | Essential detail, unintended casts, requested grade | Uncalibrated sources do not establish precise color accuracy |
+| Texture/focus | Waxy smoothing, invented detail, halos, noise mismatch | Preserve source character; match grain only where integration needs it |
+| Composite | Edges, spill, contact, resolution, illumination | Re-pasting pixels is optional and still needs integration |
+| Output | Dimensions, final-size readability, crop, actual file | Tool limits stated honestly; no invented passed review |
 
-## Diagnostic parameters
+## Measurement limits
 
-Record observation -> region -> action -> lock -> confidence. Use clear / issue / uncertain / not applicable internally. Prioritize identity, product and factual accuracy before optional polish.
-
-| ID | Parameter | Look for | Action boundary | Basis |
-|---|---|---|---|---|
-| F1 | Face identity | Changed feature proportions or distinctive marks relative to references | Preserve individual identity; no generic beauty reconstruction | User requirement; S2/S3 anatomical category |
-| F2 | Product/brand accuracy | Warped silhouette, altered finish/color, invented label/logo | Retouch presentation without redesigning product | User requirement; author adaptation of S2/S3 |
-| F3 | Exact information | Wrong names, date/time, price, venue, missing sponsor, malformed glyphs | Use confirmed copy and source logos; typeset separately when needed | User requirement; S2/S3 functional category |
-| R1 | Anatomy and contact | Fused limbs, incorrect visible fingers, grip/contact mismatch | Correct demonstrated defects; account for occlusion and normal variation | S2/S3 |
-| R2 | Geometry and depth | Conflicting scale, perspective, overlaps, unstable support | Match the scene's camera geometry; preserve intentional graphic layers | S1 layout/existence; S2/S3 physics |
-| L1 | Lighting structure | Direction, apparent source size, fill, contact/cast shadows | Multiple sources are valid when consistent; do not enforce a single shadow direction | S4 ch. 2-3; S2/S3 physics |
-| L2 | Reflective/transmissive behavior | Highlights unrelated to surroundings, opaque glass, erased metal character | Match surface finish and reflection geometry; preserve deliberate studio highlights | S4 ch. 3, 6-7 |
-| T1 | Exposure and tonal separation | Lost essential detail, clipped label, blocked silhouette | Recover essential detail without flattening intentional contrast | S1 technical; S4 ch. 9 |
-| T2 | Color and grading | Unintended cast, inconsistent integration, inaccurate product hue | Preserve intentional grade and skin/product fidelity | S1 technical/rationality; author application |
-| T3 | Texture and detail | Waxy smoothing, repeated detail, invented pores, smudges | Appropriate to material, lighting, scale and source detail | S1 detail/artifacts; S2/S3 style; S4 ch. 4/8 |
-| T4 | Focus and motion | Arbitrary blur boundaries, sharpening halos, incompatible grain | Coherent depth/motion; no blur or grain as automatic realism filter | S1 blur/artifacts; author application |
-| C1 | Composite integration | Cutout halo, spill, mismatched resolution, absent contact shadow | Match sharpness, lighting and edge treatment locally | S2/S3 style/physics; author workflow |
-| D1 | Poster hierarchy | Unclear focal point, competing text, unreadable details | Follow brief and read at final viewing size | Author design practice, not validated by the four sources |
-| B1 | Brief/context fit | Wrong sport/object use, wrong event details, unrequested style replacement | Respect intended culture/context; ask about ambiguity rather than stereotype | S1 context; S2/S3 context; author application |
-
-## What is not a parameter
-
-No universal pore amount, grain strength, asymmetry percentage, exposure offset, camera brand, realism score, or fixed research-weighted formula. Do not reuse AGIN's fitted coefficients as a universal editing rubric. Professional polish is compatible with naturalness.
+No realism percentages, automatic human-likeness scores, or universal pass/fail thresholds. A color difference between region averages can hide swapped colors and lost detail. Whole-image clipping can simply count intentional backgrounds. OCR may miss stylized type or overlook contextual errors. Measurements assist a specific decision; inspect the real result and source.
